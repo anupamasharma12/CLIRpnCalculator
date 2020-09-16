@@ -9,10 +9,12 @@ public class CLIRpmCalculator {
 
     public static void main(String[] args) throws IOException {
         Stack<String> tokens = new Stack<>();
+        // Read input argument from console
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         for (;;) {
             String s = in.readLine();
             if (s == null) break;
+            // Insert tokens into Stack
             tokens.addAll(asList(s.trim().split("[ \t]+")));
             if (tokens.peek().equals("")) continue;
             try {
@@ -24,7 +26,7 @@ public class CLIRpmCalculator {
             }
         }
     }
-
+    // method use to evaluate the input expression
     private static double evaluate(Stack<String> tks) throws Exception {
         String tk = tks.pop();
         double op1, op2;
