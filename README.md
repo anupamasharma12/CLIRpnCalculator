@@ -3,8 +3,6 @@ CLIRpnCalculator
 
 Follow Below Steps to Execute program and run the below scenario:
 
-Step 1: Run the program and execute below scenarios
-
 ---
 Scenario 1 : 
 
